@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>原神</title>
+    <link rel="stylesheet" href="index.css">
+    <link id="icon" rel="shortcut icon" href="./asset/favicon.ico">
+
+<body>
+    <video class="beijing" autoplay loop muted src="./asset/bg.mp4" type="video/mp4"></video>
+    <div class="background">
+        <div class="wen">
+            应用名称：O神<br>
+            开发者名称：吴梦芸-47
+        </div>
+        <div class="tupian"></div>
+        <div class="logo"></div>
+        <div class="jt">
+            <div class="jt-icon"></div>
+            <div class="jt-icon"></div>
+            <div class="jt-icon"></div>
+        </div>
+        <script type="text/javascript">
+            var jts = document.getElementsByClassName("jt-icon");
+            var x = 0
+            setInterval(() => {
+                jts[x].style.opacity=0.2
+                jts[(x+1)%3].style.opacity=0.4
+                jts[(x+2)%3].style.opacity=0.6
+                x = (x+1)%3
+            }, 250);
+        </script>
+    </div>
+    <div class="huodong">
+        <div class="kapiankuang">
+            <div class="kuangkuang">
+                <div class="kapian-1"></div>
+                <div class="kapian-2"></div>
+                <div class="kapian-3"></div>
+                <div class="kapian-4"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
